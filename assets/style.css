@@ -8,7 +8,7 @@ html {
 
 h4 {
   color: #a20000;
-  font-size: 28px;
+  font-size: 50px;
   text-align: center;
   margin: 5px auto;
 }
@@ -53,12 +53,12 @@ button:disabled {
 }
 
 #peso {
-  font-size: 22px;
+  font-size: 40px;
   padding: 10px 5px;
 }
 
 #calcular {
-  font-size: 18px;
+  font-size: 24px;
   background-color: rgb(107, 47, 209);
   color: #fff;
 }
@@ -69,6 +69,7 @@ button:disabled {
 
 .valores {
   display: flex;
+  margin-bottom: 20px;
 }
 
 .numeros {
@@ -77,14 +78,14 @@ button:disabled {
   grid-template-columns: repeat(6, 1fr);
   background-color: #0000009a;
   border-radius: 6px;
-  padding: 4px;
-  gap: 2px;
+  padding: 10px;
+  gap: 6px;
 }
 
 .numeros button {
   border-radius: 5px;
   font-size: 20px;
-  padding: 10px 5px;
+  padding: 18px 5px;
   background-color: rgb(229, 243, 255);
 }
 
@@ -98,6 +99,28 @@ button:disabled {
 
 #novo:hover {
   background-color: rgb(255, 97, 97);
+}
+
+@media (max-width: 1100px) {
+  .valores {
+    margin-bottom: auto;
+  }
+  #peso {
+    font-size: 22px;
+  }
+  #calcular {
+    font-size: 18px;
+  }
+  .numeros {
+    padding: 5px;
+    gap: 3px;
+  }
+  .numeros button {
+    padding: 10px 5px;
+  }
+  h4 {
+    font-size: 28px;
+  }
 }
 
 @media (max-width: 500px) {

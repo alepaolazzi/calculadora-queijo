@@ -27,13 +27,13 @@ function realizaCalculo() {
   if (num < 100) {
     resultado.innerText = `R$ ${Math.round(num)},00`;
   } else {
-    resultado.innerText = "Valor muito alto! Tente novamente";
+    resultado.innerText = "Valor muito alto!";
   }
 }
 
 function clear() {
   peso.value = "";
-  resultado.innerText = "";
+  resultado.innerText = "\u00A0";
   num = 0;
   calcular.removeAttribute("disabled");
 }
