@@ -1,0 +1,121 @@
+html {
+  overflow: hidden;
+  font-size: 20px;
+  background-image: url(./img/pexels-pixabay-302457.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h4 {
+  color: #a20000;
+  font-size: 28px;
+  text-align: center;
+  margin: 5px auto;
+}
+
+button {
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+button:disabled {
+  cursor: default;
+  background-color: rgb(107, 47, 209);
+  opacity: 0.6;
+}
+
+#calcular:hover:disabled {
+  background-color: rgb(107, 47, 209);
+}
+
+.container {
+  background-image: linear-gradient(
+    180deg,
+    hsl(35deg 42% 91%) 0%,
+    hsl(35deg 47% 90%) 21%,
+    hsl(36deg 50% 88%) 30%,
+    hsl(37deg 52% 86%) 39%,
+    hsl(38deg 53% 84%) 46%,
+    hsl(39deg 54% 83%) 54%,
+    hsl(39deg 54% 81%) 61%,
+    hsl(40deg 54% 79%) 69%,
+    hsl(41deg 53% 77%) 79%,
+    hsl(42deg 53% 75%) 100%
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+  width: max-content;
+  margin: 150px auto;
+  border-radius: 10px;
+  padding: 10px;
+  overflow: hidden;
+}
+
+#peso {
+  font-size: 22px;
+  padding: 10px 5px;
+}
+
+#calcular {
+  font-size: 18px;
+  background-color: rgb(107, 47, 209);
+  color: #fff;
+}
+
+#calcular:hover {
+  background-color: rgb(71, 21, 158);
+}
+
+.valores {
+  display: flex;
+}
+
+.numeros {
+  display: grid;
+  margin: 10px auto;
+  grid-template-columns: repeat(6, 1fr);
+  background-color: #0000009a;
+  border-radius: 6px;
+  padding: 4px;
+  gap: 2px;
+}
+
+.numeros button {
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px 5px;
+  background-color: rgb(229, 243, 255);
+}
+
+.numeros button:hover {
+  background-color: rgb(197, 228, 255);
+}
+
+#novo {
+  background-color: rgb(255, 138, 138);
+}
+
+#novo:hover {
+  background-color: rgb(255, 97, 97);
+}
+
+@media (max-width: 500px) {
+  html {
+    background-size: auto;
+    background-position: right;
+  }
+  .valores {
+    flex-direction: column;
+    align-items: center;
+  }
+  #calcular {
+    margin-top: 2px;
+    padding: 8px;
+    border-radius: 5px;
+  }
+  .numeros {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5px;
+  }
+}
