@@ -20,8 +20,11 @@ button {
 
 button:disabled {
   cursor: default;
-  background-color: rgb(107, 47, 209);
   opacity: 0.6;
+}
+
+.buent:hover:disabled {
+  background-color: #ff0000;
 }
 
 #calcular:hover:disabled {
@@ -52,15 +55,31 @@ button:disabled {
   overflow: hidden;
 }
 
-#peso {
+.entPrim {
   font-size: 40px;
   padding: 10px 5px;
+}
+
+.buent {
+  cursor: pointer;
+  padding: 10px;
+  background-color: #ff0000;
+  transition: 0.3s;
+}
+
+.buent:hover {
+  background-color: #d70202;
+}
+
+.containerEnt {
+  display: flex;
 }
 
 #calcular {
   font-size: 24px;
   background-color: rgb(107, 47, 209);
   color: #fff;
+  transition: 0.3s;
 }
 
 #calcular:hover {
@@ -95,6 +114,7 @@ button:disabled {
 
 #novo {
   background-color: rgb(255, 138, 138);
+  transition: 0.3s;
 }
 
 #novo:hover {
@@ -105,7 +125,7 @@ button:disabled {
   .valores {
     margin-bottom: auto;
   }
-  #peso {
+  .entPrim {
     font-size: 22px;
   }
   #calcular {
@@ -140,5 +160,8 @@ button:disabled {
   .numeros {
     grid-template-columns: repeat(4, 1fr);
     gap: 5px;
+  }
+  .buent {
+    border-radius: 0 5px 5px 0;
   }
 }
