@@ -6,6 +6,10 @@ html {
   background-size: cover;
 }
 
+body {
+  margin: 0;
+}
+
 h4 {
   color: #a20000;
   font-size: 50px;
@@ -153,7 +157,7 @@ button:disabled {
     align-items: center;
   }
   #calcular {
-    margin-top: 2px;
+    margin-top: 5px;
     padding: 8px;
     border-radius: 5px;
   }
@@ -163,5 +167,20 @@ button:disabled {
   }
   .buent {
     border-radius: 0 5px 5px 0;
+  }
+
+  @media (max-width: 350px) {
+    html {
+      background-position: initial;
+    }
+    .container {
+      width: 275px;
+    }
+    .numeros {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .entPrim {
+      max-width: 200px;
+    }
   }
 }
