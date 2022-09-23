@@ -175,6 +175,7 @@ button:disabled {
     }
     .container {
       width: 275px;
+      margin: 15px auto;
     }
     .numeros {
       grid-template-columns: repeat(3, 1fr);
